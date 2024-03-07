@@ -3,8 +3,8 @@ on:
     branches:
       - "master"
       - "!dev/**"
-    paths:
-      - "!**.md"
+    paths-ignore:
+      - "**.md"
   pull_request:
   workflow_dispatch:
 
