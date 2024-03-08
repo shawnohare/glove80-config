@@ -58,6 +58,14 @@
 //    mods = <(MOD_LSFT | MOD_RSHFT)>;
 // };
 
+// NOTE: RGB_STATUS appears to be a defined only
+// in the moergo zmk fork.
+#ifndef RGB_STATUS_CMD
+#define RGB_STATUS_CMD 15
+#endif
+#ifndef RGB_STATUS
+#define RGB_STATUS RGB_STATUS_CMD 0
+#endif
 
 
 /* Glove80 system behavior & macros */
