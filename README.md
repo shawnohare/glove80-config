@@ -1,4 +1,4 @@
-# Glove80 Keyboard configuration
+# zmk keyboard configurations
 
 This is our personal configuration for the Glove80 keyboard.
 
