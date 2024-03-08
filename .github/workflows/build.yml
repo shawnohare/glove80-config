@@ -11,4 +11,4 @@ on:
 jobs:
   build:
     # build against antecedant mods PR
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@2042
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@pull/2042
