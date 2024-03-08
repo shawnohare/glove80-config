@@ -2,7 +2,8 @@ on:
   push:
     branches:
       - "main"
-      - "!dev/**"
+      - "dev"
+      - "!nobuild/**"
     paths-ignore:
       - "**.md"
   pull_request:
@@ -10,5 +11,7 @@ on:
 
 jobs:
   build:
-    # build against antecedant mods PR
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@pull/2042
+    # uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # build against antecedant mods PR 2042. To get sha:
+    # git ls-remote --refs origin | rg 2042
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@8127b351e0093c554db3e5d1fd9760a75756089d
